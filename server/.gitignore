@@ -1,0 +1,15 @@
+# idea files
+/.idea/
+
+# enviromental data
+.env
+
+# dependencies
+/node_modules/
+
+# testing
+/tests/
+testing.rest
+
+# fly
+/fly.toml
