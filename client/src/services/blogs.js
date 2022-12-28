@@ -13,9 +13,9 @@ const setToken = (newToken) => {
 }
 
 // Fetches blogs from the server with HTTP GET
-const getAll = () => {
-  const request = axios.get(baseUrl)
-  return request.then(response => response.data)
+const getAll = async () => {
+  const request = await axios.get(baseUrl)
+  return request.data
 }
 
 // Sends a new blog post to the server with HTTP POST

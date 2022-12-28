@@ -1,7 +1,7 @@
 {
-  "name": "Blog list",
+  "name": "Blog App Backend",
   "version": "1.0.0",
-  "description": "Part 4 exercises of the Full Stack Open 2022 course",
+  "description": "Backend for Blog App",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node index.js",
