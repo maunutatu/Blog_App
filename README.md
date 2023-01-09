@@ -1,19 +1,45 @@
-Blog App
+# Blog App
+
+## Description
 
 A blog sharing platform.
 Users can share blogs and interact with other peoples blog recommendations.
 
-https://blogapptatu.fly.dev/
-
 A single page application showcasing end-to-end Javascript-based web development
 
-Tech stack: Javascript + React + Node + Express + NoSQL (MongoDB)
+https://blogapptatu.fly.dev/
 
-Instructions:
+## Tech stack
+#### Frontend: React. Styling with Material UI
+#### Backend: NodeJS + Express
+#### Database: MongoDB (NoSQL)
 
-Click the link a few rows up, create an account and start interacting!
+## Instructions:
 
-To play around locally on your device:
+Click [here](https://blogapptatu.fly.dev/), create an account and start interacting!
 
-Clone the project. Create your own MONGODB database. Create a .env file in the root of 'server'.
-Add your MONGODB_URI and PORT. npm start the project from the root of the server.
+#### To play around locally on your device:
+
+Create a [MongoDB](https://mongodb.com) database.
+
+Clone the project
+
+```
+git clone https://github.com/maunutatu/Blog_App
+```
+
+Create a .env file in the backend directory. Add environmental data (MONGODB_URI, TEST_MONGODB_URI)
+
+Go to the backend directory
+
+### Start with Docker:
+```
+docker build -t blogapp .
+docker run -p 5000:8080 --env-file ./.env --name blogapp
+```
+
+### Start with cmd / powershell:
+```
+npm install
+npm start
+```
