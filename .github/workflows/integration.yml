@@ -23,4 +23,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: ./server/package-lock.json
       - run: npm ci
-      - run: npm start
+      - run: npm start & npx wait-on http://localhost:3003
+        env:
+          PORT: 3003
+          MONGODB_URI: ${{secrets.MONGODB_URI}}
