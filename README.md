@@ -43,3 +43,6 @@ docker run -p 5000:8080 --env-file ./.env --name blogapp
 npm install
 npm start
 ```
+
+## CI/CD
+Continuous integration with GitHub Actions
